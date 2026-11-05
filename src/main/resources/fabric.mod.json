@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "alphawolf",
+  "version": "${version}",
+  "name": "Alpha Wolf",
+  "description": "Transform into the red and black Alpha Wolf! Gain extra hearts and take less damage while in wolf form.",
+  "authors": [
+    "EnderDevelopment"
+  ],
+  "contact": {
+    "homepage": "https://enderdevelopment.example/",
+    "sources": "https://github.com/EnderDevelopment/alpha-wolf"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.enderdevelopment.alphawolf.AlphaWolfMod"
+    ],
+    "client": [
+      "com.enderdevelopment.alphawolf.client.AlphaWolfClient"
+    ]
+  },
+  "mixins": [
+    "alphawolf.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
